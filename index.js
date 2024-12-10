@@ -1,4 +1,12 @@
 // // 1
+const showMessage = () => {
+    const userInput = prompt("Напишіть будь щось");
+    if (userInput !== null) {
+        alert("Hello World!");
+    }
+};
+
+showMessage();
 
 // // 1
 
@@ -28,7 +36,7 @@
 // // 3
 
 // 4
-const applyCallbackToEachElement= (arr, callback) => {
+const applyCallbackToEachElement = (arr, callback) => {
     return arr.map(callback);
 };
 
