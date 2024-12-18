@@ -1,12 +1,14 @@
 // // 1
-const showMessage = () => {
-    const userInput = prompt("Напишіть будь щось");
-    if (userInput !== null) {
-        alert("Hello World!");
-    }
-};
+// const showMessage = () => {
+//     const userInput = confirm("Клікни");
+//     if (userInput === true) {
+//         alert("Hello World!");
+//     }
+// };
 
-showMessage();
+// showMessage()
+
+// showMessage();
 
 // // 1
 
@@ -28,41 +30,53 @@ showMessage();
 // // 2
 
 // // 3
-// const clicksPrompt = prompt("Введіть текст");
+// let clickCount = 0;
 
-// const clicksLenght = clicksPrompt.length;
-
-// alert(`Ви клікнули ${clicksLenght} разів по клевіатурі`)
+// function ifClick() {
+//     while (true) {
+//         const ifConfirmed = confirm("Зарахувати цей клік?");
+//         if (!ifConfirmed) {
+//             break;
+//         }
+//         clickCount++;
+//         alert(`Кількість кліків: ${clickCount}`);
+//     }
+//     alert(`Всього кліків: ${clickCount}`);
+// }
+// ifClick();
 // // 3
 
 // 4
-const applyCallbackToEachElement = (arr, callback) => {
-    return arr.map(callback);
-};
+// const applyCallbackToEachElement = (arr, callback) => {
+//     const result = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         result.push(callback(arr[i]));
+//     }
+//     return result;
+// };
 
-const arr = [1, 2, 3, 4, 5];
-const squareCallback = (num) => num * num;
+// const arr = [1, 2, 3, 4, 5];
+// const squareCallback = (num) => num * num;
 
-const result = applyCallbackToEachElement(arr, squareCallback);
+// const result = applyCallbackToEachElement(arr, squareCallback);
 
-for (const value of result) {
-    console.log(value);
-};
+// for (const value of result) {
+//     console.log(value);
+// };
 
-
-console.log(result);
+// console.log(result);
 // 4
 
 // 5
-const calculateDiscountedPrice = (price, discount, callback) => {
-    const discountedPrice = price - (price * discount / 100);
-    callback(discountedPrice);
-};
+// const calculateDiscountedPrice = (price, discount, callback) => {
+//     const discountedPrice = price - (price * discount / 100);
+//     callback(discountedPrice);
+// };
 
+// const showDiscountedPrice = (discountedPrice) => {
+//     const normalPrice = Math.round(discountedPrice * 100) / 100;
+//     console.log(`Дисконтна ціна: ${normalPrice} грн`);
+// };
 
-const showDiscountedPrice = (discountedPrice) => {
-    console.log(`Дисконтна ціна: ${discountedPrice.toFixed(2)} грн`);
-};
-
-calculateDiscountedPrice(100, 10, showDiscountedPrice)
+// calculateDiscountedPrice(100, 10, showDiscountedPrice);
 // 5
